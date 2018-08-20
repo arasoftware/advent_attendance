@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#ef4d4d</color>
+    <color name="primary_dark">#ef1515</color>
+    <color name="primary_darker">#ff0000</color>
+    <color name="lightRed">#f2bab8</color>
+    <color name="accent">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="control_color">#FFFFFF</color>
+        <color name="ediitext_background">#3d3b3b</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#8f8f8f</color>
+    <color name="graly">#4d4b4b</color>
+    <color name="golden_yellow">#ffdf00</color>
+</resources>

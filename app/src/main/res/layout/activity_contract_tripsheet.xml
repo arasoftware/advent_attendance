@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ContractTrip_scrollLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ara.advent.ContractTripsheet">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/iron"
+            android:text="@string/pick_a_customer"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/Contract_spinner_Customer"
+            style="@style/spinnerTheme"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:shadowColor="@color/iron"
+            android:text="@string/text_choose_a_vehicle_type"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/spinner_vehicle_type"
+            style="@style/spinnerTheme"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:shadowColor="@color/iron"
+            android:text="@string/vehicle_no"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/input_VehicleNo"
+            android:layout_width="fill_parent"
+            android:shadowColor="@color/iron"
+            android:layout_height="35dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:shadowColor="@color/iron"
+            android:text="@string/choose_a_date"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/amaze_logo_space"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/input_date"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@color/ediitext_background"
+                android:text="@string/starting_date"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/text_right_arrow"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/ediitext_background"
+                android:contentDescription="@string/text_right_arrow"
+                android:src="@drawable/icon_right_arrow" />
+
+            <TextView
+                android:id="@+id/input_default_date"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@color/ediitext_background"
+                android:gravity="center"
+                android:shadowColor="@color/iron"
+                android:text="@string/closing_date"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/text_right_arrow1"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:background="@color/ediitext_background"
+                android:contentDescription="@string/text_right_arrow"
+                android:src="@drawable/icon_right_arrow" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/please_enter_kilometer"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/input_start_km"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/starting"
+                    android:inputType="number"
+                    android:shadowColor="@color/iron"
+                    android:textSize="14sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/input_closing_km"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/closing"
+                    android:inputType="number"
+                    android:shadowColor="@color/iron"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/input_total_km"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/ediitext_background"
+                android:gravity="center"
+                android:shadowColor="@color/iron"
+                android:text="@string/total"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/please_enter_a_time"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/amaze_logo_space"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/input_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2"
+                android:clickable="false"
+                android:gravity="center"
+                android:shadowColor="@color/iron"
+                android:text="@string/starting"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edittext_starthoursInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hh"
+                android:maxLength="2"
+                android:inputType="number"
+                android:shadowColor="@color/iron"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text=":"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+
+                android:id="@+id/edittext_startMinutesInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/mm"
+                android:maxLength="2"
+                android:inputType="number"
+                android:shadowColor="@color/iron"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/input_closing_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:clickable="false"
+                android:gravity="center"
+                android:shadowColor="@color/iron"
+                android:text="@string/closing"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edittext_endhoursInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hh"
+                android:maxLength="2"
+                android:inputType="number"
+                android:shadowColor="@color/iron"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text=":"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+
+                android:maxLength="2"
+                android:id="@+id/edittext_endMinutesInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/mm"
+                android:inputType="number"
+                android:shadowColor="@color/iron"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/input_total_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/ediitext_background"
+                android:gravity="center"
+                android:maxWidth="60dp"
+                android:shadowColor="@color/iron"
+                android:text="@string/total"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_booking"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="25dp"
+            android:padding="12dp"
+            android:text="Submit"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</ScrollView>
